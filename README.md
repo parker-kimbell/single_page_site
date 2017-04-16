@@ -9,3 +9,8 @@ Use these instructions for Apostrophe CMS http://apostrophecms.org/docs/tutorial
 npm install apostrophe-cli -g
 ```
 was used to generate the initial project.
+
+```
+# Test project was initiated
+apostrophe create test-project
+```
