@@ -1,17 +1,17 @@
 {
   "name": "test-project",
-  "version": "2.0.0",
-  "description": "Minimal test-project",
+  "version": "0.0.1",
+  "description": "Stacy Rosenboom site",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/parker-kimbell/single_page_site"
   },
-  "author": "P'unk Avenue",
-  "license": "MIT",
+  "author": "Parker Kimbell",
+  "license": "Copyright Parker Kimbell @ 2017",
   "dependencies": {
     "apostrophe": "^2.0.0"
   }
