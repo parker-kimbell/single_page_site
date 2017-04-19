@@ -9,20 +9,21 @@
 
 {% block main %}
   <div class="main-content">
+    <h2><a href="{{ data.home._url }}">{{ data.home.title }}</a></h2>
     <h3>Hello world!
       {% if not data.user %}
         <a class="login-link" href="/login">Login</a>
       {% endif %}
     </h3>
-    {{ apos.area(data.page, 'body', {
-  widgets: {
-    'apostrophe-rich-text': {
-      toolbar: [ 'Bold', 'Italic' ]
-    },
-    'apostrophe-images': {
-      size: 'full'
-    }
-  }
-}) }}
+        {{ apos.area(data.page, 'body', {
+      widgets: {
+        'apostrophe-rich-text': {
+          toolbar: [ 'Bold', 'Italic' ]
+        },
+        'apostrophe-images': {
+          size: 'full'
+        }
+      }
+    }) }}
   </div>
 {% endblock %}
