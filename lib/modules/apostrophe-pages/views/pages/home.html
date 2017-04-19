@@ -14,6 +14,15 @@
         <a class="login-link" href="/login">Login</a>
       {% endif %}
     </h3>
-    <p>This is a very barebones Apostrophe project. Now, get to work and make a real website!</p>
+    {{ apos.area(data.page, 'body', {
+  widgets: {
+    'apostrophe-rich-text': {
+      toolbar: [ 'Bold', 'Italic' ]
+    },
+    'apostrophe-images': {
+      size: 'full'
+    }
+  }
+}) }}
   </div>
 {% endblock %}
