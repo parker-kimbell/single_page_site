@@ -7,6 +7,7 @@ var apos = require('apostrophe')({
   // configuring user acounts.
 
   modules: {
-    // Add custom apostrophe-modules and their respective configuration here!
+    'link-widgets' : {},
+    'page-link-widgets': {}
   }
 });
