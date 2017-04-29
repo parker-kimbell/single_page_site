@@ -5,6 +5,27 @@
 
 {% extends data.outerLayout %}
 
+{% block beforeMain %}
+  <div class='menu-container'>
+    <div class='site-logo'>
+      Stacy Rosenboom
+    </div>
+    <div class='site-tagline'>
+      Professional Artist
+    </div>
+    <nav>
+      {{
+        apos.area(data.page, 'navigation', {
+          widgets: {
+            link: {},
+            'page-link': {}
+          }
+        })
+      }}
+    </nav>
+  </div>
+{% endblock %}
+
 {% block title %}{{ super() }} | Home{% endblock %}
 
 {% block main %}

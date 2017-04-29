@@ -20,24 +20,6 @@
     We recommend you use the beforeMain block for global page components
     like headers or navigation.
   #}
-  <div class='menu-container'>
-    <div class='site-logo'>
-      Stacy Rosenboom
-    </div>
-    <div class='site-tagline'>
-      Professional Artist
-    </div>
-    <nav>
-      {{
-        apos.area(data.page, 'navigation', {
-          widgets: {
-            link: {},
-            'page-link': {}
-          }
-        })
-      }}
-    </nav>
-  </div>
 {% endblock %}
 
 {% block main %}
