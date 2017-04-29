@@ -30,13 +30,13 @@
 
 {% block main %}
   <div class="main-content">
-    <h2><a href="{{ data.home._url }}">{{ data.home.title }}</a></h2>
+    <!-- <h2><a href="{{ data.home._url }}">{{ data.home.title }}</a></h2> -->
     <h3>Hello world!
       {% if not data.user %}
         <a class="login-link" href="/login">Login</a>
       {% endif %}
     </h3>
-        {{ apos.area(data.page, 'body', {
+        <!-- {{ apos.area(data.page, 'body', {
       widgets: {
         'apostrophe-rich-text': {
           toolbar: [ 'Bold', 'Italic' ]
@@ -45,6 +45,33 @@
           size: 'full'
         }
       }
-    }) }}
+    }) }} -->
+    <h4 class="section-title" name="portfolio">
+      Some text
+      {{
+        apos.singleton(data.page, 'portfolio_title', 'apostrophe-rich-text', {toolbar: [ 'Bold', 'Italic' ]})
+      }}
+    </h4>
+    <div class="section-description">
+
+    </div>
+    <h4 class="section-title" name="contact">
+      Some text
+      {{
+        apos.singleton(data.page, 'contact_title', 'apostrophe-rich-text', {})
+      }}
+    </h4>
+    <div class="section-title">
+
+    </div>
+    <h4 class="section-title" name="about">
+      Some text
+      {{
+        apos.singleton(data.page, 'about_title', 'apostrophe-rich-text', {})
+      }}
+    </h4>
+    <div class="section-title">
+
+    </div>
   </div>
 {% endblock %}
