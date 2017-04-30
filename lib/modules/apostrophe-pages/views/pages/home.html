@@ -128,10 +128,12 @@
       }}
     </h4>
     <div class="section-description contact">
-      <div class="display-inline">
-        {{
-          apos.singleton(data.page, 'contact_information_email', 'apostrophe-rich-text', {})
-        }}
+      <div class="display-inline icon-container">
+        <div class="contact-text">
+          {{
+            apos.singleton(data.page, 'contact_information_email', 'apostrophe-rich-text', {})
+          }}
+        </div>
         <div class="wrap icon">
           <a href="mailto:stacymayjane@gmail.com">
             <div class="circle">
@@ -141,15 +143,19 @@
           </a>
         </div>
       </div>
-      <div class="display-inline">
-        {{
-          apos.singleton(data.page, 'contact_information_tumblr', 'apostrophe-rich-text', {})
-        }}
+      <div class="display-inline icon-container">
+        <div class="contact-text">
+          {{
+            apos.singleton(data.page, 'contact_information_tumblr', 'apostrophe-rich-text', {})
+          }}
+        </div>
         <a target="_blank" href="https://skombles.tumblr.com/" class="zocial icon tumblr"></a>
       </div>
-      {{
-        apos.singleton(data.page, 'email_address', 'apostrophe-rich-text', {})
-      }}
+      <div class="contact-desc">
+        {{
+          apos.singleton(data.page, 'contact_information_desc', 'apostrophe-rich-text', {})
+        }}
+      </div>
     </div>
     <h4 class="section-title">
       <a name="about" />
@@ -157,8 +163,8 @@
         apos.singleton(data.page, 'about_title', 'apostrophe-rich-text', {})
       }}
     </h4>
-    <div class="section-description">
-      <div class="portfolio-image">
+    <div class="section-description about">
+      <div class="about-image">
         {{apos.singleton(
           data.page,
           'about_image',
@@ -166,9 +172,11 @@
           {size : 'one-third'})
         }}
       </div>
-      {{
-        apos.singleton(data.page, 'about_text', 'apostrophe-rich-text', {})
-      }}
+      <div class="align-left">
+        {{
+          apos.singleton(data.page, 'about_text', 'apostrophe-rich-text', {})
+        }}
+      </div>
     </div>
   </div>
 {% endblock %}
