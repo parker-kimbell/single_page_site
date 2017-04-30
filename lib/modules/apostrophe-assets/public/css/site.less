@@ -1,6 +1,8 @@
 @import "utils/reset.less";
 
 @envelope-color: #FFF;
+@blue-color : #3b5998;
+@gray-color : #eee;
 
 // Delete the boilerplate CSS below when you are ready to dive in and customize your sites:
 body { background-color: @apos-light; }
@@ -10,7 +12,9 @@ body { background-color: @apos-light; }
   left : 0;
   bottom : 0;
   position : fixed;
+  z-index: 5;
   width : 20%;
+  min-width : 15em;
   background-color : green;
   font-family: 'Karla', sans-serif;
   color: white;
@@ -39,11 +43,12 @@ body { background-color: @apos-light; }
 
 .main-content {
   font-family: 'Karla', sans-serif;
-  margin: 200px auto;
   padding: 20px;
   max-width: 80%;
   float : right;
-  min-height: 1.5em;
+  vertical-align: top;
+  margin-left : 15em;
+  min-height: 20em;
   color: @apos-white;
   background-color: @apos-primary;
   .apos-drop-shadow;
@@ -60,15 +65,55 @@ body { background-color: @apos-light; }
   .section-title {
     margin-top : 5em;
     margin-bottom : 5em;
+    text-align: center;
+    font-size: 5em;
   }
 
-  // body
-  //   background: #797979
+  #facebook-icon {
+    background: @blue-color;
+    text-indent: -999em;
+    width: 100px;
+    height: 110px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 15px solid @blue-color;
+    border-bottom: 0;
+    display: inline-block;
+    &:before {
+      background: @blue-color;
+      content: "/20";
+      position: absolute;
+      bottom: -30px;
+      right: -37px;
+      width: 40px;
+      height: 90px;
+      border: 20px solid @gray-color;
+      border-radius: 25px;
+    }
+    &:after {
+      background: @gray-color;
+      content: "/20";
+      position: absolute;
+      top: 50px;
+      right: 5px;
+      width: 55px;
+      height: 20px;
+    }
+  }
+
+  .wrap-fb {
+    margin: 35px auto;
+    text-align: center;
+    display: block;
+    float : left;
+  }
 
   .wrap {
     margin: 40px auto;
     position: relative;
     width: 200px;
+    float : left;
   }
 
   .circle {
