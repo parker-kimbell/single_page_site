@@ -53,6 +53,9 @@
       }}
     </h4>
     <div class="section-description portfolio">
+      {{
+        apos.singleton(data.page, 'portfolio_description', 'apostrophe-rich-text', {})
+      }}
       <div class="portfolio-image">
         {{apos.singleton(
           data.page,
@@ -117,9 +120,6 @@
           {size : 'one-third'})
         }}
       </div>
-      {{
-        apos.singleton(data.page, 'portfolio_description', 'apostrophe-rich-text', {})
-      }}
     </div>
     <h4 class="section-title">
       <a name="contact" />
@@ -128,17 +128,25 @@
       }}
     </h4>
     <div class="section-description contact">
-      {{
-        apos.singleton(data.page, 'contact_information', 'apostrophe-rich-text', {})
-      }}
-      <div class="wrap icon">
-        <a href="mailto:stacymayjane@gmail.com">
-          <div class="circle">
-            <div class="envelope-top"></div>
-            <div class="envelope"></div>
-          </div>
-        </a>
-      </div><a target="_blank" href="https://skombles.tumblr.com/" class="zocial icon tumblr"></a>
+      <div class="display-inline">
+        {{
+          apos.singleton(data.page, 'contact_information_email', 'apostrophe-rich-text', {})
+        }}
+        <div class="wrap icon">
+          <a href="mailto:stacymayjane@gmail.com">
+            <div class="circle">
+              <div class="envelope-top"></div>
+              <div class="envelope"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="display-inline">
+        {{
+          apos.singleton(data.page, 'contact_information_tumblr', 'apostrophe-rich-text', {})
+        }}
+        <a target="_blank" href="https://skombles.tumblr.com/" class="zocial icon tumblr"></a>
+      </div>
       {{
         apos.singleton(data.page, 'email_address', 'apostrophe-rich-text', {})
       }}
@@ -150,6 +158,14 @@
       }}
     </h4>
     <div class="section-description">
+      <div class="portfolio-image">
+        {{apos.singleton(
+          data.page,
+          'about_image',
+          'apostrophe-images',
+          {size : 'one-third'})
+        }}
+      </div>
       {{
         apos.singleton(data.page, 'about_text', 'apostrophe-rich-text', {})
       }}
