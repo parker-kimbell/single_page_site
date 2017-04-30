@@ -53,6 +53,19 @@
       }}
     </h4>
     <div class="section-description">
+      <div class="portfolio-image">
+        {{
+          apos.singleton(data.page, 'image-one', 'apostrophe-images', {
+            size : 'one-sixth'
+          })
+        }}
+      </div><div class="portfolio-image">
+        {{
+          apos.singleton(data.page, 'image-two', 'apostrophe-images', {
+            size : 'one-sixth'
+          })
+        }}
+      </div>
       {{
         apos.singleton(data.page, 'portfolio_description', 'apostrophe-rich-text', {})
       }}
