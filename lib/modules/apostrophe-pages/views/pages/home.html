@@ -13,7 +13,7 @@
     <div class='site-tagline'>
       Professional Artist
     </div>
-    <nav>
+    <nav class="nav-container">
       {{
         apos.area(data.page, 'navigation', {
           widgets: {
@@ -32,15 +32,7 @@
   <div class="main-content">
     <h4 class="section-title portfolio">
       <a name="portfolio" />
-      {{
-        apos.singleton(data.page, 'portfolio_title', 'apostrophe-rich-text', {})
-      }}
     </h4>
-    <h5 class="section-subtitle">
-      {{
-        apos.singleton(data.page, 'portfolio_subtitle', 'apostrophe-rich-text', {})
-      }}
-    </h5>
     <div class="section-description portfolio">
       <div class="portfolio-image">
         {{apos.singleton(
