@@ -30,32 +30,18 @@
 
 {% block main %}
   <div class="main-content">
-    <!-- <h2><a href="{{ data.home._url }}">{{ data.home.title }}</a></h2> -->
-    <h3>
-      {% if not data.user %}
-        <a class="login-link" href="/login">Login</a>
-      {% endif %}
-    </h3>
-        <!-- {{ apos.area(data.page, 'body', {
-      widgets: {
-        'apostrophe-rich-text': {
-          toolbar: [ 'Bold', 'Italic' ]
-        },
-        'apostrophe-images': {
-          size: 'full'
-        }
-      }
-    }) }} -->
-    <h4 class="section-title">
+    <h4 class="section-title portfolio">
       <a name="portfolio" />
       {{
         apos.singleton(data.page, 'portfolio_title', 'apostrophe-rich-text', {})
       }}
     </h4>
-    <div class="section-description portfolio">
+    <h5 class="section-subtitle">
       {{
-        apos.singleton(data.page, 'portfolio_description', 'apostrophe-rich-text', {})
+        apos.singleton(data.page, 'portfolio_subtitle', 'apostrophe-rich-text', {})
       }}
+    </h5>
+    <div class="section-description portfolio">
       <div class="portfolio-image">
         {{apos.singleton(
           data.page,
