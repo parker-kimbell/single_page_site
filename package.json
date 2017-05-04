@@ -13,6 +13,7 @@
   "author": "Parker Kimbell",
   "license": "Copyright Parker Kimbell @ 2017",
   "dependencies": {
-    "apostrophe": "^2.0.0"
+    "apostrophe": "^2.0.0",
+    "express": "^4.15.2"
   }
 }

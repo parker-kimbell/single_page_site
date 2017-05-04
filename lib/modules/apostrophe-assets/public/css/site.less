@@ -3,9 +3,16 @@
 @envelope-color: #FFF;
 @blue-color : #3b5998;
 @gray-color : #eee;
+@site-background : #EFEEEE;
+@menu-background : #E4DAC2;
 
 // Delete the boilerplate CSS below when you are ready to dive in and customize your sites:
-body { background-color: @apos-light; }
+body {
+  background-color: @menu-background;
+  color : black;
+  font-size: 33px;
+  line-spacing: 1.5em;
+ }
 
 .menu-container {
   top : 0;
@@ -14,19 +21,16 @@ body { background-color: @apos-light; }
   position : fixed;
   z-index: 5;
   width : 20%;
-  min-width : 15em;
-  background-color : green;
-  font-family: 'Karla', sans-serif;
-  color: white;
+  font-family: effra, helvetica, arial, sans-serif;
   text-align: center;
   .apos-drop-shadow;
 
   .site-logo {
-    font-size : 56px;
+    font-size : 2em;
   }
 
   site-tagline {
-    font-size : 46px;
+    font-size : 1.7em;
   }
 
   .nav-container {
@@ -35,37 +39,38 @@ body { background-color: @apos-light; }
 
     .link-test {
       margin-top : 30px;
-      margin-left : 30px;
-      
+      text-align: center;
     }
 
     .link-test > a {
-      font-size : 2em;
+      font-size : 1.1em;
       text-decoration: none;
-      color : white;
       padding : 5px;
+      width : 100%;
+      color : black;
     }
 
-    .link-test > a:hover {
-      background-color : white;
-      color : black;
+    .link-test:hover {
+      background-color : black;
+
+      a {
+        color : white;
+      }
     }
 
   }
 }
 
 .main-content {
-  font-family: 'Karla', sans-serif;
+  font-family: effra, helvetica, arial, sans-serif;
   padding: 20px;
-  max-width: 80%;
+  width : 80%;
   float : right;
   text-align : center;
   vertical-align: top;
-  margin-left : 15em;
-  min-height: 20em;
-  color: @apos-white;
-  background-color: @apos-primary;
-  .apos-drop-shadow;
+  margin-left : 2em;
+  color: @apos-black;
+  background-color: @site-background;
 
   .login-link {
     float: right;
@@ -74,7 +79,7 @@ body { background-color: @apos-light; }
 
   .section-description {
     display: inline-block;
-    margin-bottom: 8em;
+    margin-bottom: 3em;
   }
 
   .display-inline {
@@ -87,7 +92,6 @@ body { background-color: @apos-light; }
   }
 
   .section-description.about {
-    min-width : 25em;
     width : 40%;
   }
 
@@ -105,13 +109,12 @@ body { background-color: @apos-light; }
   }
 
   .about-image {
-    min-width : 25em;
-    width : 40%;
+    width : 60%;
     display: inline-block;
     vertical-align: top;
     .apos-drop-shadow;
     padding : 10px;
-    background-color : pink;
+    background-color : @site-background;
     margin-bottom: 10px;
     padding-top : 0px;
   }
@@ -121,13 +124,12 @@ body { background-color: @apos-light; }
   }
 
   .portfolio-image {
-    min-width : 25em;
-    width : 40%;
+    width : 6em;
     display: inline-block;
     margin: 20px;
     vertical-align: top;
     .apos-drop-shadow;
-    background-color : pink;
+    background-color : @site-background;
     padding : 10px;
     padding-top : 0px;
   }
@@ -139,7 +141,7 @@ body { background-color: @apos-light; }
   .section-title {
     margin-bottom : 1.15em;
     text-align: center;
-    font-size: 5em;
+    font-size: 2em;
   }
 
   .section-title.portfolio {
@@ -148,7 +150,7 @@ body { background-color: @apos-light; }
 
   .section-subtitle {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   .zocial.tumblr:before {content: "t";}

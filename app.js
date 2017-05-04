@@ -1,3 +1,4 @@
+var express = require('express');
 var apos = require('apostrophe')({
   shortName: 'test-project',
   title: 'test-project',
