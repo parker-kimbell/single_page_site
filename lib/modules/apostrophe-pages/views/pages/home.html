@@ -34,7 +34,14 @@
       <a name="portfolio" />
     </h4>
     <div class="section-description portfolio">
-      <div class="portfolio-image">
+      {{
+        apos.area(data.page, 'image-sequence', {
+          widgets: {
+            'multi-image': {}
+          }
+        })
+      }}
+      <!-- <div class="portfolio-image">
         {{apos.singleton(
           data.page,
           'image_one',
@@ -98,7 +105,7 @@
           {size : 'one-third'})
         }}
       </div>
-    </div>
+    </div> -->
     <h4 class="section-title">
       <a name="contact" />
       {{

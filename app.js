@@ -9,6 +9,6 @@ var apos = require('apostrophe')({
 
   modules: {
     'link-widgets' : {},
-    'page-link-widgets': {}
+    'multi-image-widgets' : {}
   }
 });
